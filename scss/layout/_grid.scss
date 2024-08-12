@@ -1,0 +1,22 @@
+.grid-container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 8rem 35rem 15rem;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header header header header header header header header header"
+      ". disposicion disposicion disposicion disposicion disposicion disposicion . ticket ticket ticket ."
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+  
+  .header { grid-area: header; background-color: chartreuse;}
+  
+  .disposicion { grid-area: disposicion; background-color: rgb(236, 236, 236); font-size: 15px;}
+  
+  .ticket { grid-area: ticket; background-color: rgb(13, 21, 133); color: white;}
+
+  .footer { grid-area: footer; min-height: 15rem; width: 100%; position: fixed; bottom: 0; background-color: rgb(209, 230, 25);}
+
+
+  
